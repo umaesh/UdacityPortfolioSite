@@ -6,7 +6,10 @@ body html {
 }
 .container {
   width: 100%;
-  /*flex-wrap: wrap;*/
+}
+img {
+    width: 100%;
+    height: auto;
 }
 .side_menu {
   width: 25%;
@@ -19,7 +22,7 @@ body html {
     float:left;
 }
 header {
-  width: 75%;
+  width: :75%;
   float: right;
   min-height: 56px;
   transition: min-height 0.3s;
@@ -38,32 +41,31 @@ header {
   padding-bottom:60px;
 }
 .skyline_section {
-  width: 100%;
+  width: 60%;
   display: inline-block;
+  padding-bottom: 20px;
 }
 .skyline {
-  width: 600px;
-  height: 400px;
-  float: right;
-  margin-right: 25%;
+  width: 100%;
+  height: auto;
+
 }
 .news {
   width: 100%;
 }
 .news1 {
   float: left;
-  width: 25%;
-  padding-left: 25%;
   text-align: center;
 }
 .news2, .news3 {
   float: left;
-  width: 25%;
   text-align: center;
 }
 .news_thumbnail {
   width: 300px;
   height: 200px;
+  width: 100%;
+  height: auto;
 }
 footer {
   clear: both;
@@ -73,7 +75,21 @@ footer {
     margin-top: -3em;
      background:#6cf;
 }
-/*@media screen and (min-width:700px) {
-  .header { width: 100%; order: 1; }
-  .skyline { width: 100%; order: 2; }
-}*/
+.flex-grid {
+  display: flex;
+}
+.col {
+  flex: 1;
+}
+@media (max-width: 600px) {
+  .flex-grid {
+    display: block;
+  }
+}
+.flex-grid-thirds {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-grid-thirds .col {
+  width: 10%;
+}
