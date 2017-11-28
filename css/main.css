@@ -21,14 +21,15 @@ img {
 }
 .left_side {
      width: 40%;
+     overflow: hidden;
 }
 .udacity_logo {
      width: 60%;
-     padding-top: 20%;
+     padding-top: 30%;
 }
 .udacity_logo img {
   width: 100%;
-
+  height: 100%;
 }
 .main {
   width: 60%;
